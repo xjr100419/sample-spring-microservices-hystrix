@@ -1,0 +1,13 @@
+server:  
+  port: ${PORT:8761}
+    
+eureka:  
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: false
+    response-cache-update-interval-ms: 3000
+    eviction-interval-timer-in-ms: 5000

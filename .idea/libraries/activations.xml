@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="activations">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/gateway-service/activations" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/gateway-service/activations" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,73 @@
+spring:
+  application:
+    name : monitoring
+
+#  rabbitmq:
+#    host: localhost
+#    username: springcloud
+#    password: 123456
+#  cloud:
+#    stream:
+#      bindings:
+#        input:
+#          group: default
+
+server:
+  port : 8880
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: monitoring
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+
+#management:
+#   port: 8990
+turbine:
+  aggregator:
+    clusterConfig: test,pro
+  appConfig: gateway-server,customer-service
+  clusterNameExpression: metadata['labelOr']
+
+#turbine:
+#  appConfig: gateway-server,customer-service
+#  cluster-name-expression: new String("default")
+#  aggregator:
+#    cluster-config: default
+
+
+
+#  turbine-stream 用
+#  stream:
+#    port: 8888
+
+
+
+#turbine.cluster-name-expression=SAMPLE-HYSTRIX-AGGREGATE
+#turbine.app-config=SAMPLE-HYSTRIX-AGGREGATE
+#spring.rabbitmq.addresses=192.168.1.1
+#spring.rabbitmq.port=5672
+#spring.rabbitmq.username=test
+#spring.rabbitmq.password=password
+#spring.rabbitmq.virtualHost=/test
+#spring.cloud.stream.rabbit.bindings.test.consumer.prefix=z
+#spring.cloud.stream.bindings.input.group=default
+#
+## 这是turbine的端口即暴露监控数据的端口，跟server.port不同
+#turbine.stream.port=8888
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apm-toolkit-opentracing-activation-5.0.0-alpha">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/account-service/lib/apm-toolkit-opentracing-activation-5.0.0-alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,100 @@
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    username: springcloud
+#    password: 123456
+#  cloud:
+#    stream:
+#      bindings:
+#        input:
+#          group: default
+
+
+
+
+#spring.rabbitmq.addresses=192.168.1.1
+#spring.rabbitmq.port=5672
+#spring.rabbitmq.username=test
+#spring.rabbitmq.password=password
+#spring.rabbitmq.virtualHost=/test
+#spring.cloud.stream.rabbit.bindings.test.consumer.prefix=z
+#spring.cloud.stream.bindings.input.group=default
+
+
+
+
+zuul:
+  # 开启Zuul的重试
+  retryable: true
+  prefix: /api
+  routes:
+    account: 
+      path: /account/**
+      serviceId: account-service
+      ribbon:
+          ServerListRefreshInterval: 1000
+          MaxAutoRetries: 0
+          # 切换实例的重试次数
+          MaxAutoRetriesNextServer: 2
+          #  OkToRetryOnAllOperations: false
+          ConnectTimeout: 500
+          ReadTimeout: 3000
+
+    customer: 
+      path: /customer/**
+      serviceId: customer-service
+
+  ribbon-isolation-strategy: thread
+
+
+ribbon:
+  eureka:
+    enabled: true
+  # 对当前实例的重试次数
+  MaxAutoRetries: 0
+  # 切换实例的重试次数
+  MaxAutoRetriesNextServer: 2
+#  OkToRetryOnAllOperations: false
+  ConnectTimeout: 500
+  ReadTimeout: 3000
+
+  NFLoadBalancerRuleClassName: com.github.charlesvhe.springcloud.practice.core.LabelAndWeightMetadataRule
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+
+
+  threadpool:
+    default:
+      coreSize: 50
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#    registerWithEureka: false
+    registry-fetch-interval-seconds: 1
+  instance:
+    metadata-map:
+      labelOr: ${LABELOR:test}
+
+account-service:
+  ribbon:
+    ServerListRefreshInterval: 1000
+
+
+server:
+  port: 5555
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+    org.springframework.retry: DEBUG

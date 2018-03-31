@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="account-service" />
+        <module name="core" />
+        <module name="customer-service" />
+        <module name="discovery-service" />
+        <module name="discovery-service (1)" />
+        <module name="gateway-service" />
+        <module name="gps-service" />
+        <module name="hystrix-dashboard" />
+        <module name="monitoring" />
+        <module name="spring-cloud-practice-core" />
+        <module name="turbine" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service" target="1.8" />
+      <module name="account-service (1)" target="1.8" />
+      <module name="agent-grpc" target="1.8" />
+      <module name="agent-grpc-define" target="1.8" />
+      <module name="agent-grpc-provider" target="1.8" />
+      <module name="agent-jetty" target="1.8" />
+      <module name="agent-jetty-define" target="1.8" />
+      <module name="agent-jetty-provider" target="1.8" />
+      <module name="alarm-define" target="1.8" />
+      <module name="alarm-provider" target="1.8" />
+      <module name="analysis-alarm" target="1.8" />
+      <module name="analysis-baseline" target="1.8" />
+      <module name="analysis-jvm" target="1.8" />
+      <module name="analysis-metric" target="1.8" />
+      <module name="analysis-register" target="1.8" />
+      <module name="analysis-segment-parser" target="1.8" />
+      <module name="analysis-worker-model" target="1.8" />
+      <module name="apm" target="1.8" />
+      <module name="apm-agent" target="1.6" />
+      <module name="apm-agent-core" target="1.6" />
+      <module name="apm-application-toolkit" target="1.6" />
+      <module name="apm-collector" target="1.8" />
+      <module name="apm-collector-agent" target="1.8" />
+      <module name="apm-collector-analysis" target="1.8" />
+      <module name="apm-collector-boot" target="1.8" />
+      <module name="apm-collector-cache" target="1.8" />
+      <module name="apm-collector-cluster" target="1.8" />
+      <module name="apm-collector-component" target="1.8" />
+      <module name="apm-collector-configuration" target="1.8" />
+      <module name="apm-collector-core" target="1.8" />
+      <module name="apm-collector-grpc-manager" target="1.8" />
+      <module name="apm-collector-instrument" target="1.8" />
+      <module name="apm-collector-jetty-manager" target="1.8" />
+      <module name="apm-collector-naming" target="1.8" />
+      <module name="apm-collector-remote" target="1.8" />
+      <module name="apm-collector-storage" target="1.8" />
+      <module name="apm-collector-ui" target="1.8" />
+      <module name="apm-commons" target="1.6" />
+      <module name="apm-datacarrier" target="1.6" />
+      <module name="apm-dubbo-plugin" target="1.6" />
+      <module name="apm-elastic-job-2.x-plugin" target="1.6" />
+      <module name="apm-feign-default-http-9.x-plugin" target="1.6" />
+      <module name="apm-grpc-1.x-plugin" target="1.6" />
+      <module name="apm-h2-1.x-plugin" target="1.6" />
+      <module name="apm-httpClient-4.x-plugin" target="1.6" />
+      <module name="apm-jdbc-commons" target="1.6" />
+      <module name="apm-jedis-2.x-plugin" target="1.6" />
+      <module name="apm-jetty-client-9.0-plugin" target="1.6" />
+      <module name="apm-jetty-client-9.x-plugin" target="1.6" />
+      <module name="apm-jetty-server-9.x-plugin" target="1.6" />
+      <module name="apm-mongodb-2.x-plugin" target="1.6" />
+      <module name="apm-mongodb-3.x-plugin" target="1.6" />
+      <module name="apm-mysql-5.x-plugin" target="1.6" />
+      <module name="apm-network" target="1.6" />
+      <module name="apm-nutz-http-1.x-plugin" target="1.6" />
+      <module name="apm-nutz-mvc-annotation-1.x-plugin" target="1.6" />
+      <module name="apm-okhttp-3.x-plugin" target="1.6" />
+      <module name="apm-oracle-10.x-plugin" target="1.6" />
+      <module name="apm-postgresql-8.x-plugin" target="1.6" />
+      <module name="apm-protocol" target="1.8" />
+      <module name="apm-resin-3.x-plugin" target="1.6" />
+      <module name="apm-resin-4.x-plugin" target="1.6" />
+      <module name="apm-resttemplate-4.3.x-plugin" target="1.6" />
+      <module name="apm-rocketmq-4.x-plugin" target="1.6" />
+      <module name="apm-sdk-plugin" target="1.6" />
+      <module name="apm-sharding-jdbc-1.5.x-plugin" target="1.6" />
+      <module name="apm-sniffer" target="1.6" />
+      <module name="apm-spring-cloud-feign-1.x-plugin" target="1.6" />
+      <module name="apm-spring-concurrent-util-4.x-plugin" target="1.6" />
+      <module name="apm-spring-core-patch" target="1.6" />
+      <module name="apm-springmvc-annotation-3.x-plugin" target="1.6" />
+      <module name="apm-springmvc-annotation-4.x-plugin" target="1.6" />
+      <module name="apm-springmvc-annotation-commons" target="1.6" />
+      <module name="apm-spymemcached-2.x-plugin" target="1.6" />
+      <module name="apm-struts2-2.x-plugin" target="1.6" />
+      <module name="apm-test-tools" target="1.6" />
+      <module name="apm-toolkit-activation" target="1.6" />
+      <module name="apm-toolkit-log4j-1.x" target="1.6" />
+      <module name="apm-toolkit-log4j-1.x-activation" target="1.6" />
+      <module name="apm-toolkit-log4j-2.x" target="1.6" />
+      <module name="apm-toolkit-log4j-2.x-activation" target="1.6" />
+      <module name="apm-toolkit-logback-1.x" target="1.6" />
+      <module name="apm-toolkit-logback-1.x-activation" target="1.6" />
+      <module name="apm-toolkit-opentracing" target="1.6" />
+      <module name="apm-toolkit-opentracing-activation" target="1.6" />
+      <module name="apm-toolkit-trace" target="1.6" />
+      <module name="apm-toolkit-trace-activation" target="1.6" />
+      <module name="apm-ui-protocol" target="1.8" />
+      <module name="apm-util" target="1.6" />
+      <module name="apm-xmemcached-2.x-plugin" target="1.6" />
+      <module name="baseline-computing-define" target="1.8" />
+      <module name="baseline-computing-provider" target="1.8" />
+      <module name="client-component" target="1.8" />
+      <module name="collector-cache-define" target="1.8" />
+      <module name="collector-cache-guava-provider" target="1.8" />
+      <module name="collector-cluster-define" target="1.8" />
+      <module name="collector-cluster-redis-provider" target="1.8" />
+      <module name="collector-cluster-standalone-provider" target="1.8" />
+      <module name="collector-cluster-zookeeper-provider" target="1.8" />
+      <module name="collector-configuration-define" target="1.8" />
+      <module name="collector-configuration-provider" target="1.8" />
+      <module name="collector-grpc-manager-define" target="1.8" />
+      <module name="collector-grpc-manager-provider" target="1.8" />
+      <module name="collector-jetty-manager-define" target="1.8" />
+      <module name="collector-jetty-manager-provider" target="1.8" />
+      <module name="collector-naming-define" target="1.8" />
+      <module name="collector-naming-jetty-provider" target="1.8" />
+      <module name="collector-remote-define" target="1.8" />
+      <module name="collector-remote-grpc-provider" target="1.8" />
+      <module name="collector-remote-kafka-provider" target="1.8" />
+      <module name="collector-storage-define" target="1.8" />
+      <module name="collector-storage-es-provider" target="1.8" />
+      <module name="collector-storage-h2-provider" target="1.8" />
+      <module name="collector-ui-define" target="1.8" />
+      <module name="collector-ui-jetty-provider" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="customer-service" target="1.8" />
+      <module name="discovery-service" target="1.8" />
+      <module name="discovery-service (1)" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="gps-service" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
+      <module name="jetty-plugins" target="1.6" />
+      <module name="jvm-define" target="1.8" />
+      <module name="jvm-provider" target="1.8" />
+      <module name="metric-define" target="1.8" />
+      <module name="metric-provider" target="1.8" />
+      <module name="monitoring" target="1.8" />
+      <module name="motan-plugin" target="1.6" />
+      <module name="netflix-plugins" target="1.6" />
+      <module name="nutz-plugins" target="1.6" />
+      <module name="register-define" target="1.8" />
+      <module name="register-provider" target="1.8" />
+      <module name="sample-spring-microservices" target="1.8" />
+      <module name="segment-parser-define" target="1.8" />
+      <module name="segment-parser-provider" target="1.8" />
+      <module name="server-component" target="1.8" />
+      <module name="spring-cloud" target="1.6" />
+      <module name="spring-cloud-practice-core" target="1.8" />
+      <module name="spring-plugins" target="1.6" />
+      <module name="tomcat-7.x-8.x-plugin" target="1.6" />
+      <module name="turbine" target="1.8" />
+      <module name="zipkin-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

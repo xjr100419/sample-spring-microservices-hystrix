@@ -1,0 +1,50 @@
+server:  
+  port: ${PORT:3333}
+
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    metadataMap:
+      version: ${VERSION:1}
+      labelOr: ${LABELOR:test}
+
+ribbon:
+  eureka:
+    enabled: true
+  # 对当前实例的重试次数
+  MaxAutoRetries: 0
+  # 切换实例的重试次数
+  MaxAutoRetriesNextServer: 1
+  ReadTimeout: 1000
+  NFLoadBalancerRuleClassName: com.github.charlesvhe.springcloud.practice.core.LabelAndWeightMetadataRule
+  
+logging:
+  level:
+    com.netflix.ribbon: DEBUG
+    com.netflix.hystrix: DEBUG
+
+#Enable for Scenarios 1,2,3
+#feign:
+#  hystrix:
+#    enabled: false
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+
+# 全局关闭hystrix支持 版本升级后不再默认打开
+feign:
+    hystrix:
+        enabled: true
+
+account-service:
+  ribbon:
+    ServerListRefreshInterval: 1000

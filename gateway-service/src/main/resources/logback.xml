@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- 控制台 -->
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>[%-5level] %d{HH} %logger{36} %line: %msg %n</Pattern>   <!-- 输出格式 -->
+			<charset>UTF-8</charset> <!-- 解决中文乱码问题 -->
+		</encoder>
+	</appender>
+
+
+	<root level="INFO">
+		<appender-ref ref="CONSOLE"/>
+	</root>
+
+</configuration>
